@@ -1,0 +1,6 @@
+venv/
+data/raw/
+data/inflation.db
+pipeline.log
+__pycache__/
+*.pyc
