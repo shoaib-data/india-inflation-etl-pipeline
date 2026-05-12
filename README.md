@@ -1,4 +1,4 @@
-# 🇮🇳 India Inflation ETL Pipeline
+# India Inflation ETL Pipeline
 
 An automated ETL pipeline that tracks India's Consumer Price Index (CPI) from 1957–2025, calculates inflation trends, and flags months where inflation exceeded RBI's 6% tolerance limit.
 
