@@ -97,6 +97,11 @@ def load(df):
     result = pd.read_sql("SELECT COUNT(*) as total_rows FROM cpi_data", conn)
     log(f"LOAD: Verification — {result['total_rows'][0]} rows in database")
 
+    # Export clean CSV for Power BI
+    csv_path = "data/inflation_clean.csv"
+    df.to_csv(csv_path, index=False)
+    log(f"LOAD: Clean CSV exported to {csv_path}")
+    
     conn.close()
     log("LOAD: Database connection closed")
 
